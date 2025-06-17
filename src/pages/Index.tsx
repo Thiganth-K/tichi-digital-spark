@@ -22,11 +22,10 @@ const Index = () => {
       <div className="bg-white shadow-sm border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-4 sm:space-y-0">
-            <div className="text-center sm:text-left">
+            <div className="text-center flex-1">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Tichi Digital Marketing Strategy
               </h1>
-              <p className="text-slate-600 mt-2 text-sm sm:text-base">Connecting opportunities, building communities</p>
             </div>
             <div className="flex items-center justify-center sm:justify-end space-x-2 sm:space-x-4">
               <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200 text-xs sm:text-sm">

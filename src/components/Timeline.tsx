@@ -1,16 +1,14 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
 import { Calendar, CheckCircle, Clock, Play, Target } from "lucide-react";
 
 const Timeline = () => {
   const phases = [
     {
       phase: "Phase 1: Foundation",
-      duration: "Months 1-2",
+      duration: "Months 0-3",
       status: "completed",
-      progress: 100,
       color: "blue",
       objectives: [
         "Set up analytics and tracking systems",
@@ -30,7 +28,6 @@ const Timeline = () => {
       phase: "Phase 2: Growth",
       duration: "Months 3-6", 
       status: "in-progress",
-      progress: 65,
       color: "purple",
       objectives: [
         "Launch paid advertising campaigns",
@@ -50,7 +47,6 @@ const Timeline = () => {
       phase: "Phase 3: Scale",
       duration: "Months 7-12",
       status: "planned",
-      progress: 15,
       color: "teal",
       objectives: [
         "Expand to additional marketing channels",
@@ -158,19 +154,13 @@ const Timeline = () => {
                     <div className="text-sm text-slate-600 font-normal">{phase.duration}</div>
                   </div>
                 </CardTitle>
-                <div className="flex items-center space-x-3">
-                  <Badge className={getStatusColor(phase.status)}>
-                    {getStatusIcon(phase.status)}
-                    <span className="ml-1">{phase.status}</span>
-                  </Badge>
-                  <span className="text-sm font-medium text-slate-700">{phase.progress}%</span>
-                </div>
+                <Badge className={getStatusColor(phase.status)}>
+                  {getStatusIcon(phase.status)}
+                  <span className="ml-1">{phase.status}</span>
+                </Badge>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
-              {/* Progress Bar */}
-              <Progress value={phase.progress} className="h-3" />
-              
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {/* Objectives */}
                 <div>

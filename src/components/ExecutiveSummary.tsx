@@ -1,5 +1,5 @@
+
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { TrendingUp, Users, Target, DollarSign, Calendar, Zap } from "lucide-react";
 
@@ -8,28 +8,24 @@ const ExecutiveSummary = () => {
     {
       title: "Brand Recognition",
       target: "+30% brand searches",
-      progress: 65,
       icon: TrendingUp,
       color: "text-blue-600"
     },
     {
       title: "Lead Generation", 
       target: "5,000+ leads/month",
-      progress: 45,
       icon: Users,
       color: "text-purple-600"
     },
     {
       title: "Platform Conversion",
       target: "+35% conversion",
-      progress: 72,
       icon: Target,
       color: "text-teal-600"
     },
     {
       title: "Revenue Scale",
       target: "₹3.6 Cr in Year 1",
-      progress: 28,
       icon: DollarSign,
       color: "text-orange-600"
     }
@@ -86,14 +82,7 @@ const ExecutiveSummary = () => {
               </CardTitle>
             </CardHeader>
             <CardContent className="p-4 pt-0">
-              <div className="space-y-3">
-                <div className="text-xs text-slate-600">{objective.target}</div>
-                <Progress value={objective.progress} className="h-2" />
-                <div className="flex justify-between text-xs">
-                  <span className="text-slate-500">Progress</span>
-                  <span className={`font-medium ${objective.color}`}>{objective.progress}%</span>
-                </div>
-              </div>
+              <div className="text-xs text-slate-600">{objective.target}</div>
             </CardContent>
           </Card>
         ))}
@@ -154,7 +143,7 @@ const ExecutiveSummary = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
               <div className="font-semibold text-blue-800 mb-2 text-sm sm:text-base">Phase 1: Foundation</div>
-              <div className="text-sm text-blue-700 mb-3">Months 1-2</div>
+              <div className="text-sm text-blue-700 mb-3">Months 0-3</div>
               <ul className="text-xs text-blue-600 space-y-1">
                 <li>• Analytics setup</li>
                 <li>• Website optimization</li>
