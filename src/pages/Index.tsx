@@ -26,14 +26,7 @@ const Index = () => {
                 Tichi Digital Marketing Strategy
               </h1>
             </div>
-            <div className="flex items-center justify-center sm:justify-end space-x-2 sm:space-x-4">
-              <Badge variant="outline" className="bg-blue-50 text-blue-700 border-blue-200 text-xs sm:text-sm">
-                Live Dashboard
-              </Badge>
-              <Badge variant="outline" className="bg-green-50 text-green-700 border-green-200 text-xs sm:text-sm">
-                2024 Strategy
-              </Badge>
-            </div>
+            
           </div>
         </div>
       </div>
