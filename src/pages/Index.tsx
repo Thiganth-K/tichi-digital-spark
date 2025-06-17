@@ -2,7 +2,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import TeamAssignments from "@/components/TeamAssignments";
 import ExecutiveSummary from "@/components/ExecutiveSummary";
 import BusinessFoundation from "@/components/BusinessFoundation";
 import MarketAnalysis from "@/components/MarketAnalysis";
@@ -43,7 +42,7 @@ const Index = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8">
         <Tabs defaultValue="executive" className="space-y-4 sm:space-y-6">
           <div className="overflow-x-auto pb-2">
-            <TabsList className="grid w-full grid-cols-6 sm:grid-cols-12 bg-white shadow-sm border border-slate-200 min-w-max">
+            <TabsList className="grid w-full grid-cols-5 sm:grid-cols-11 bg-white shadow-sm border border-slate-200 min-w-max">
               <TabsTrigger value="executive" className="data-[state=active]:bg-blue-50 data-[state=active]:text-blue-700 text-xs px-1 sm:px-2 py-2">
                 Executive
               </TabsTrigger>
@@ -76,9 +75,6 @@ const Index = () => {
               </TabsTrigger>
               <TabsTrigger value="team" className="data-[state=active]:bg-blue-50 data-[state=active]:text-blue-700 text-xs px-1 sm:px-2 py-2">
                 Team
-              </TabsTrigger>
-              <TabsTrigger value="assignment" className="data-[state=active]:bg-blue-50 data-[state=active]:text-blue-700 text-xs px-1 sm:px-2 py-2">
-                Tasks
               </TabsTrigger>
             </TabsList>
           </div>
@@ -125,10 +121,6 @@ const Index = () => {
 
           <TabsContent value="team">
             <TeamStructure />
-          </TabsContent>
-
-          <TabsContent value="assignment">
-            <TeamAssignments />
           </TabsContent>
         </Tabs>
       </div>
