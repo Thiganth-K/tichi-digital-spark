@@ -219,7 +219,7 @@ const GoalsKPIs = () => {
             <div className="p-4 bg-green-50 rounded-lg border border-green-200">
               <div className="font-semibold text-green-800 mb-2">On Track Goals</div>
               <div className="text-2xl font-bold text-green-700 mb-1">7</div>
-              <div className="text-sm text-green-600">Goals achieving >70% progress</div>
+              <div className="text-sm text-green-600">Goals achieving &gt;70% progress</div>
             </div>
             
             <div className="p-4 bg-yellow-50 rounded-lg border border-yellow-200">
