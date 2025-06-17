@@ -1,8 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Progress } from "@/components/ui/progress";
-import { DollarSign, TrendingUp, Target, BarChart3 } from "lucide-react";
+import { DollarSign, Target, BarChart3 } from "lucide-react";
 
 const BudgetAllocation = () => {
   const totalBudget = 5000; // ₹5,000 monthly budget
@@ -21,33 +20,17 @@ const BudgetAllocation = () => {
       ]
     },
     { 
-      category: "Content Creation", 
-      percentage: 10, 
-      amount: 500, 
-      color: "bg-purple-500",
-      description: "Video production, graphic design, copywriting",
-      channels: []
-    },
-    { 
-      category: "Tools & Software", 
-      percentage: 5, 
-      amount: 250, 
-      color: "bg-teal-500",
-      description: "Analytics, design tools, automation platforms",
-      channels: []
-    },
-    { 
-      category: "Personnel/Agency", 
-      percentage: 10, 
-      amount: 500, 
+      category: "Agency Fee", 
+      percentage: 14, 
+      amount: 700, 
       color: "bg-orange-500",
-      description: "External consultants and agency fees",
+      description: "20% of utilized budget for agency services",
       channels: []
     },
     { 
       category: "Contingency Reserve", 
-      percentage: 5, 
-      amount: 250, 
+      percentage: 16, 
+      amount: 800, 
       color: "bg-slate-400",
       description: "Emergency funds and unexpected opportunities",
       channels: []
@@ -67,7 +50,7 @@ const BudgetAllocation = () => {
       target: "≥ 1.5%",
       current: "1.8%",
       status: "excellent",
-      icon: TrendingUp
+      icon: BarChart3
     },
     {
       metric: "Install → Signup Rate",
@@ -124,8 +107,8 @@ const BudgetAllocation = () => {
             </div>
           </div>
           <p className="text-blue-100">
-            Focus on high-ROI digital channels with emphasis on Meta Ads and student-centric 
-            content distribution for maximum impact.
+            Focus on high-ROI digital channels with emphasis on Meta Ads and regional targeting 
+            for maximum impact. Agency gets 20% of utilized budget.
           </p>
         </CardContent>
       </Card>
@@ -213,40 +196,40 @@ const BudgetAllocation = () => {
         </Card>
       </div>
 
-      {/* Quarterly Review Framework */}
+      {/* Channel Focus */}
       <Card className="bg-white border border-slate-200">
         <CardHeader>
           <CardTitle className="flex items-center space-x-2">
             <BarChart3 className="h-5 w-5 text-purple-600" />
-            <span>Quarterly Budget Review Framework</span>
+            <span>Channel Focus Strategy</span>
           </CardTitle>
         </CardHeader>
         <CardContent>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
-              <div className="font-semibold text-blue-800 mb-2">Cost Efficiency</div>
+              <div className="font-semibold text-blue-800 mb-2">Meta Ads Priority</div>
               <div className="space-y-2 text-sm text-blue-700">
-                <div>• CPA (Cost per App Install): ≤₹60</div>
-                <div>• A/B test creatives regularly</div>
-                <div>• Lower bid ceiling on underperforming channels</div>
+                <div>• Geo-target Tier 1 & 2 cities</div>
+                <div>• Carousel and story ads</div>
+                <div>• Identity and discovery messaging</div>
               </div>
             </div>
             
             <div className="p-4 bg-purple-50 rounded-lg border border-purple-200">
-              <div className="font-semibold text-purple-800 mb-2">Conversion Optimization</div>
+              <div className="font-semibold text-purple-800 mb-2">Google Search Focus</div>
               <div className="space-y-2 text-sm text-purple-700">
-                <div>• Install → Signup: ≥25%</div>
-                <div>• Creative CTR on Meta: ≥1.5%</div>
-                <div>• Try vernacular CTA and visuals</div>
+                <div>• Low-CPC keywords targeting</div>
+                <div>• "Freelance work India" keywords</div>
+                <div>• Avoid broad match strategies</div>
               </div>
             </div>
             
             <div className="p-4 bg-teal-50 rounded-lg border border-teal-200">
-              <div className="font-semibold text-teal-800 mb-2">Spend Efficiency</div>
+              <div className="font-semibold text-teal-800 mb-2">Retargeting Strategy</div>
               <div className="space-y-2 text-sm text-teal-700">
-                <div>• 100% monthly budget utilization</div>
-                <div>• Shift budget to best-performing channels</div>
-                <div>• Monitor ROI across all platforms</div>
+                <div>• Simple reminder creatives</div>
+                <div>• Warm audience filters</div>
+                <div>• Landing page visitors focus</div>
               </div>
             </div>
           </div>
